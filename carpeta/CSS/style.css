@@ -1,0 +1,111 @@
+nav>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background: white;
+    width: 100%;
+    margin: 0px;
+    top: 0;
+    padding: 30px;
+}
+.cerrar.elemento {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    background: cadetblue;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: cell;
+}
+/* Clases de las diferentes medidas de CSS */
+.cm {
+    background: beige;
+    width: 12cm;
+    height: 12cm;
+}
+.mm {
+    background: aliceblue;
+    width: 120mm;
+    height: 120mm;
+}
+.in {
+    background: blueviolet;
+    width: 4.74in;
+    height: 4.74in;
+}
+.px {
+    background: burlywood;
+    width: 455px;
+    height: 455px;
+}
+.pt {
+    background: darksalmon;
+    width: 341pt;
+    height: 341pt;
+}
+.pc {
+    background: mediumslateblue;
+    width: 28.44pc;
+    height: 28.44pc;
+}
+/* Clases de las medidas de CSS absolutas */
+.absolutas-sizes {
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* Clases de las medidas de CSS relativas */
+.relativas-sizes {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 12em;
+    width: 12em;
+}
+.em {
+    BACKGROUND: honeydew;
+    WIDTH: 23em;
+    height: 23em;
+}
+.rem {
+    BACKGROUND: rgb(254, 240, 255);
+    WIDTH: 23rem;
+    height: 23rem;
+}
+.vh {
+    BACKGROUND: hwb(28 94% 0%);
+    WIDTH: 23rem;
+    height: 23rem;
+}
+.vw {
+    background: palegoldenrod;
+    width: 28vw;
+    height: 28vw;
+}
+.porcentaje {
+    background: lightcoral;
+    width: 43%;
+    height: 28%;
+}
+
+div#imagenfalsa {
+    height: 350px;
+    width: 253px;
+    background: url(/imagen/Gauguin.jpg);
+    margin: auto;
+    background-size: 500px 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1000px blueviolet;
+}
+[target="_blank"]
+ {
+    background: chartreuse;
+}
+@media all and (min-width: 400px) and (max-width: 800px){
+    p {
+    color: red;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
