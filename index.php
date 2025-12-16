@@ -11,7 +11,6 @@
                 background-color: brown;
             }
         </style>
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi primer título técnico</title>
     </head>
@@ -25,8 +24,6 @@
                             <li><a href="/carpeta/es-donde-queremos-ir.html">Es a dónde queremos ir</a></li>
                             <li><a href="https://seoloquesea.com/" target="_blank">Para saberlo aquí</a></li>
                             <li><a href ="/carpeta/carpeta-archivo.html">Medidas</a></li>
-
-
                     </ul>
             </nav>
         </header>
@@ -37,7 +34,8 @@
                     <p>Hoy estoy que lo parto, otro primera cosa técnica que no es un div y no es h1</p>
                     <p>quiero un espaciado</p></br>
                     <p>no sabemos si hará el espaciado</p>
-                    <span>vamos con el primer span</span>
+                    <?php echo "Hola profesor de SEO técnico";?>
+                    <p><span>vamos con el primer span</span></p>
                     <img src="/imagen/estructura-etiquetas-html.png">
                     <div>
                         <div>con una etiqueta div</div> 
