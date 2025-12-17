@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-        <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/carpeta/CSS/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Para saber a dónde vamos</title>
-    </head>
-    <body>
-        <header> 
-            <nav>
-                    <ul>
-                            <li><a href="/">Inicio</a></li>
-                            <li><a href="/quienes-somos.html">Quienes somos</a></li>
-                            <li><a href="/a-donde-vamos.html">A dónde vamos</a></li>
-                            <li><a href="/carpeta/es-donde-queremos-ir.html">Es a dónde queremos ir</a></li>
-                            <li><a href="https://seoloquesea.com/" target="_blank">Para saberlo aquí</a></li>
-                    </ul>
-                    <div class="cerrar elemento">X</div>
-            </nav>
-        </header>
+<?php 
+include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
+?>
             <h1>A dónde vamos</h1>
                 <section id="content"></section>
                 <!-- el div ocupa un espacio físico-->
@@ -29,8 +11,6 @@
                 </picture>
                 <div id="imagenfalsa"></div>
                 </section>
-              <footer>
-              <p>Carlos García, SEO lo que SEA en 2025</p><a href= "mailto:carlos@seoloquesea.com">Puedes escribirme aquí</a>
-            </footer>
-    </body>
-</html>
+         <?php 
+include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/footer.php';
+?>    

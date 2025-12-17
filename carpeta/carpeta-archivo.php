@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-        <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/carpeta/CSS/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Todas las medidas</title>
-    </head>
-    <body>
-        <header> 
-            <nav>
-                    <ul>
-                            <li><a href="/">Inicio</a></li>
-                            <li><a href="/quienes-somos.html">Quienes somos</a></li>
-                            <li><a href="/a-donde-vamos.html">A dónde vamos</a></li>
-                            <li><a href="/carpeta/es-donde-queremos-ir.html">Es a dónde queremos ir</a></li>
-                            <li><a href="https://seoloquesea.com/" target="_blank">Para saberlo aquí</a></li>
+<?php 
+include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
+?>
 
-                    </ul>
-            </nav>
-        </header>
             <h1>Probar medidas</h1>
                 <p>En este espacio vamos a probar medidas y demás elementos de CSS</p>
                 <section class="medidas"></section>
@@ -41,3 +24,6 @@
                 <div class="porcentaje"> % porcentaje del tamaño del elemento.¿De qué elemento? Del elemento de arriba. En este caso de la clase "relativas sizes". Para eso hay que ponerle medidas al elemento de arriba.</div>
                 </div>
 
+<?php 
+include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/footer.php';
+?>    

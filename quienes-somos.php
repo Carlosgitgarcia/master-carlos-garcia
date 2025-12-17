@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-        <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/carpeta/CSS/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Para saber quienes somos</title>
-    </head>
-    <body>
-        <header> 
-                <!-- Cuánto más código, más pesa un elemento -->
-            <nav>
-                    <ul>
-                            <li><a href="/">Inicio</a></li>
-                            <li><a href="/quienes-somos.html">Quienes somos</a></li>
-                            <li><a href="/a-donde-vamos.html">A dónde vamos</a></li>
-                            <li><a href="/carpeta/es-donde-queremos-ir.html">Es a dónde queremos ir</a></li>
-                            <li><a href="https://seoloquesea.com/" target="_blank">Para saberlo aquí</a></li>
-
-
-                    </ul>
-            </nav>
-        </header>
+<?php 
+include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
+?>
             <h1>Quienes somos</h1>
                 <section id="content"></section>
                     <div title="Si quedas el ratón quieto, lo puedes leer">mi primer div técnico</div>
@@ -63,8 +43,6 @@
                         <summary>¿y las respuestas, no tienen etiqueta?</summary>
                         es una pregunta igual de seria
                     </details>
-            <footer>
-              <p>Carlos García, SEO lo que SEA en 2025</p><a href= "mailto:carlos@seoloquesea.com">Puedes escribirme aquí</a>
-            </footer>
-    </body>
-</html>
+           <?php 
+include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/footer.php';
+?>    
