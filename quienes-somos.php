@@ -1,6 +1,7 @@
 <?php 
 include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
 ?>
+<section>
             <h1>Quienes somos</h1>
                 <section id="content"></section>
                     <div title="Si quedas el ratón quieto, lo puedes leer">mi primer div técnico</div>
@@ -28,8 +29,8 @@ include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
                     <p>no sabemos si hará el espaciado</p>
                     <span>vamos con el primer span</span>
                     <img src="/imagen/estructura-etiquetas-html.png">
-                </section>
-                <section id="FAQ"></section>
+</section>
+                <section id="FAQ">
                     <h2>Preguntas frecuentes, no tan frecuentes</h2>
                     <details>
                         <summary>¿Podré posicionar mi negocio si no tengo inversión?</summary>
@@ -43,6 +44,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
                         <summary>¿y las respuestas, no tienen etiqueta?</summary>
                         es una pregunta igual de seria
                     </details>
+</section>
            <?php 
 include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/footer.php';
 ?>    
