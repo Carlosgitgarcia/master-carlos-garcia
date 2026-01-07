@@ -1,15 +1,42 @@
+body {
+    margin: 0px;
+}
+section {
+    max-width: 90%;
+    width: 120ch;
+    margin: auto;
+}
+nav {
+    display: block;
+    height: 38px;
+    margin-bottom: 3em;
+}
+/* 
+Como has puesto un position fixed
+pones el elemento como en otra capa.
+Es por esto que al nav le pongo el alto que te ocupa luego el listado
+Así no te tapa el h1.
+
+Hay miles de formas e incluso más eficientes, 
+pero te muestro esta para que lo veas facil
+*/
 nav>ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: fixed;
-    background: white;
+    background: #fffffffa;
     width: 100%;
-    margin: 10px;
-    top: 30px;
+    /* Le quito el margen y le pongo transparencia y sombra para que 
+    lo diferencies del resto del contenido */
+    margin: 0px;
+    top: 0;
     padding: 20px;
+    left: 0;
+    box-shadow: 0px 4px 9px 2px #00000012;
 }
+
 .cerrar.elemento {
     position: fixed;
     top: 16px;
@@ -50,15 +77,14 @@ nav>ul {
     width: 28.44pc;
     height: 28.44pc;
 }
+/* Cambio a block para que puedas ver los tamaños reales */
 /* Clases de las medidas de CSS absolutas */
 .absolutas-sizes {
-    display: flex;
-    flex-wrap: nowrap;
+    display: block;
 }
 /* Clases de las medidas de CSS relativas */
 .relativas-sizes {
-    display: flex;
-    flex-wrap: nowrap;
+    display: block;
     height: 12em;
     width: 12em;
 }

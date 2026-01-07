@@ -1,7 +1,7 @@
 <?php 
 include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
 ?>
-
+<section>
             <h1>Probar medidas</h1>
                 <p>En este espacio vamos a probar medidas y demás elementos de CSS</p>
                 <section class="medidas"></section>
@@ -23,7 +23,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
                 <div class="vw">vw = porcentaje del ancho del viewport. Cambia en función del ancho del dispositivo</div>
                 <div class="porcentaje"> % porcentaje del tamaño del elemento.¿De qué elemento? Del elemento de arriba. En este caso de la clase "relativas sizes". Para eso hay que ponerle medidas al elemento de arriba.</div>
                 </div>
-
+</section>
 <?php 
 include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/footer.php';
 ?>    
