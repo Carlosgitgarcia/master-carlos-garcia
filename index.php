@@ -1,6 +1,20 @@
 <?php 
 include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
 ?>
+<?php 
+$nombre = "Carlos";
+echo 'Hola, mi nombre es ' . $nombre;
+$tieneMasterSeoTecnico = "en_proceso";
+if ($tieneMasterSeoTecnico === 'si') {
+    echo ' tengo el título de Máster de SEO Técnico';
+} elseif ($tieneMasterSeoTecnico === "en_proceso") {
+    echo ' estoy cursando el Máster de SEO Técnico';
+} else {
+    echo ' no tengo el título de Máster de SEO Técnico';
+}
+?>
+
+
         <!-- Tengo una duda y es que la navegación no permite visualizar el H1. ¿cómo puedo mostrar el H1 o qué debo tocar en la navegación para que no afecte al contenido? -->
                 <section id="content">
                     <h1 style= "color: rgb(149, 0, 255)">Mi primer H1 técnico</h1>
