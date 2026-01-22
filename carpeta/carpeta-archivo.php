@@ -1,4 +1,5 @@
 <?php 
+define('NOMBRE_PAGINA', 'carpeta-archivo');
 include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
 ?>
 <section>
