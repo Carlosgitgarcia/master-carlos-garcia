@@ -14,3 +14,4 @@ Proyecto Máster SEO técnico
     - He añadido sections por semántica y corregido algunos que creabas y cerrabas sin poner contenido.
     - Evita mayúsculas en los nombres de archivos y carpetas
 - PHP revisado
+ # 26/01/26 php segunda parte revisado 
