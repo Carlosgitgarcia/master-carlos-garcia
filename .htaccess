@@ -1,9 +1,16 @@
-RewriteEngine on
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*)/$ https://%{HTTP_HOST}/$1 [R=301,L,QSA]
 
-RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L,QSA]
 
-RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
-RewriteRule .* - [L,R=404]
+RewriteCond %{REQUEST_URI} !^/enviar_correo\.php$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [L]
 
-# NOTE! FOR APACHE ON WINDOWS: Add [NC] to RewriteCond like this:
-# RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$" [NC]
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_URI} \.php$
+RewriteCond %{REQUEST_URI} !/enviar_correo\.php$ [NC] # Nueva condición para excluir enviar_correo.php
+RewriteRule ^(.*)\.php$ /$1 [R=301,L,NE]
