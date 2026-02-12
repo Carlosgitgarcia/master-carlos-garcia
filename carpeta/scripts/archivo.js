@@ -8,3 +8,5 @@ function cambiarTextoEvent() {
 }
 
 document.getElementById('boton-EventListener').addEventListener('click', cambiarTextoEvent);
+//redirecciones por js 
+window.location.href = "https://carlos.sanchezdonate.com/articulo/redireccion-301-desde-sitebuilders/";

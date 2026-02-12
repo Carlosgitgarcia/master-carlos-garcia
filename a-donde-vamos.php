@@ -47,6 +47,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
         }
         activador[0].setAttribute("onclick", "funcioncarlos()");
         }
+// varibale if/else
         let puntos = 75;
         let medalla 
         if (puntos > 100) {
