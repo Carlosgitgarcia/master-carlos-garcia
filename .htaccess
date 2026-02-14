@@ -2,8 +2,10 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.*)/$ https://%{HTTP_HOST}/$1 [R=301,L,QSA]
 
+<IfModule mod_rewrite.c>
 RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L,QSA]
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
 
 RewriteCond %{REQUEST_URI} !^/enviar_correo\.php$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST'];?>/carpeta/css/style.css?version=01">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <?php define("TITLE", 'Mi primera web técnica'); ?>
-
     </head>
         <body>
         <header> 
@@ -17,6 +16,7 @@
                             <li><a href="/carpeta/es-donde-queremos-ir">Es a dónde queremos ir</a></li>
                             <li><a href="https://seoloquesea.com/" target="_blank">Para saberlo aquí</a></li>
                             <li><a href ="/carpeta/carpeta-archivo">Medidas</a></li>
+                            <li><a href ="/repaso">Repaso</a></li>
 
                     </ul>
             </nav>
@@ -59,6 +59,5 @@ switch (constant('NOMBRE_PAGINA')) {
         break;
 }
 comprobar_pagina();
-
 ?>
         </header>

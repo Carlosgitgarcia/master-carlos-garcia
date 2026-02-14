@@ -2,7 +2,6 @@
 define('NOMBRE_PAGINA', 'index');
 include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php'; ?>
  <title> <?php echo TITLE; ?> </title>
-
 <?php 
 $nombre = "Carlos";
 echo 'Hola, mi nombre es ' . $nombre;
