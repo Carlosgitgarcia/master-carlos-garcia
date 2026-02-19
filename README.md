@@ -15,3 +15,6 @@ Proyecto Máster SEO técnico
     - Evita mayúsculas en los nombres de archivos y carpetas
 - PHP revisado
  # 26/01/26 php segunda parte revisado 
+
+# 19/02/26 Ejercicios JS Revisados. 
+# No pongas una redirect en la página de los ejercicios, que me vuelves loco 🤣🤣

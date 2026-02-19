@@ -9,4 +9,9 @@ function cambiarTextoEvent() {
 
 document.getElementById('boton-EventListener').addEventListener('click', cambiarTextoEvent);
 //redirecciones por js 
-window.location.href = "https://carlos.sanchezdonate.com/articulo/redireccion-301-desde-sitebuilders/";
+
+// window.location.href = "https://carlos.sanchezdonate.com/articulo/redireccion-301-desde-sitebuilders/";
+
+// La redirección funciona correctamente
+// Pero te agradecería para la próxima vez no ponerla en la página donde has hecho los ejercicios 
+// porque tengo que comentarla para corregirlos 🤣🤣

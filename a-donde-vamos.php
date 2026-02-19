@@ -8,6 +8,7 @@ include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
         </section>
         <section id="content">
         <!-- el div ocupa un espacio físico-->
+         <!-- Cuidado al introducir clases con puntos, en este caso 'mensaje.js' no es una notación estándar y podría dificultar la lectura. Usa separadores como guines '-' -->
          <p id="mensaje.js">Mensaje javascript</p>
          <p id="firstjs">El primer JS con onclick</p>
          <button type="button"
@@ -32,6 +33,9 @@ include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
         <div id="imagenfalsa"></div>
         
 <script>
+        // Estás tratando de buscar un elemento por su clase llamada "efectito", 
+        // pero no has definido ningún elemento con esa clase en tu HTML.
+
         // Muchas clases.
         const activador = document.getElementsByClassName("efectito");
         //activador[0].addEventListener("click", funcioncarlos);function funcioncarlos(){
@@ -40,6 +44,9 @@ include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
         collection[i].classList.add("redjs");
         }
         activador[0].setAttribute("onclick", "funcionNumero2()");
+        // Aquí tienes un error en una llave, de hecho, se puede ver en la consola. 
+        // Es posible porque tienes comentado una línea arriba, donde se abre la función.
+        // Uncaught SyntaxError: Unexpected token '}' (at a-donde-vamos:62:9)
         }function funcionNumero2(){
         const ejemplazo = document.getElementsByClassName("pruebaclassjs");
         for (let i = 0; i < ejemplazo.length; i++) {
@@ -47,6 +54,10 @@ include $_SERVER['DOCUMENT_ROOT'].'/carpeta/assets/header.php';
         }
         activador[0].setAttribute("onclick", "funcioncarlos()");
         }
+
+// Como el anterior script tiene errores, no se reproduce lo siguiente, el sistema de puntos ni el semáforo. 
+// Si comentas el código anterior (o lo corriges) sí podrás ver que en la consola se imprime lo de más abajo.
+
 // varibale if/else
         let puntos = 75;
         let medalla 
