@@ -4,3 +4,98 @@ Author: Alumno Máster SEO Técnico
 Description: Tema personalizado alumno.
 Version: 0.1
 */
+/* Contenedor que centra las 3 cajas */
+.recent-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las cajas horizontalmente */
+    gap: 20px;               /* Espacio entre las cajas */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;          /* Centra el contenedor en la pantalla */
+}
+
+/* Estilo de la caja (Card) */
+.post-card {
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    width: 300px;            /* Ancho de cada caja */
+    min-height: 350px;       /* Altura mínima para que se vea como caja */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px); /* Efecto al pasar el ratón */
+}
+
+/* Contenedor interno para organizar el contenido */
+.post-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja el footer hacia abajo */
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Estilo del extracto */
+.post-excerpt {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Parte inferior de la caja donde va el título */
+.post-card-footer {
+    border-top: 1px solid #f0f0f0;
+    margin: 0 -20px -20px -20px; /* Expande el fondo hasta los bordes */
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Título centrado abajo */
+.post-card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center; /* Centra el texto del título */
+}
+
+.post-card-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.post-card-title a:hover {
+    color: #0073aa; /* Color de WordPress al pasar el ratón */
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.entry-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.descripcion-corta-acf {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #555;
+    border-left: 4px solid #333;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
