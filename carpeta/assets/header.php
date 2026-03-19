@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST'];?>/carpeta/css/style.css?version=01">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <?php define("TITLE", 'Mi primera web técnica'); ?>
+        <?php define("TITLE", 'Mi primera web técnica'); 
+        include "carpeta/assets/metas-seo.php"; 
+        ?>
     </head>
         <body>
         <header> 

@@ -10,8 +10,6 @@
     <meta name="robots" content="noimageindex">
     <meta name="robots" content="unavailable_after: 2033-09-27">
     <meta http-equiv="refresh" content="30; url=https://google.com/" />
-
-    
         </head>
         <body>
             <header>            
@@ -20,7 +18,7 @@
             <H1>página única</H1>
 
             <footer>
-                 <p>Copyright</p>
+                 <div data-nosnippet>Este atributo html no permite que el contenido que hay dentro de la etiqueta div,section o span se muestre en las SERPS. Si puede ser rastreado<p>Copyright</p></div>
             </footer>
 
         </body>
