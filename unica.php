@@ -10,6 +10,10 @@
     <meta name="robots" content="noimageindex">
     <meta name="robots" content="unavailable_after: 2033-09-27">
     <meta http-equiv="refresh" content="30; url=https://google.com/" />
+
+    <!-- Se deben poner todas las directivas dirigidas al mismo bot en la misma meta, la meta robots debe ser unica, puede crear confusión si hay varias-->
+     <meta name="googlebot" content="index, follow, max-snippet:25, noimageindex, unavailable_after: 2033-09-27">
+
         </head>
         <body>
             <header>            
