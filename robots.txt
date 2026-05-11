@@ -1,0 +1,13 @@
+#Carlos García de la Cruz 
+User-agent:YandexBot
+Disallow:/
+User-agent: Googlebot
+Disallow:/oferta-blackfriday/
+User-agent:*
+Disallow:/scripts/*?prescindible
+Allow: /scripts/*.js
+Allow: /scripts/*.json
+Disallow:/nomeves/
+Allow:/nomeves/cartagena/
+Allow:/nomeves/sources/*.css
+Sitemap:https://example.com/sitemap.xml
